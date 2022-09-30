@@ -1,0 +1,19 @@
+{
+  "name": "yalc_yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"src/**\"",
+    "test": "jest --detectOpenHandles",
+    "prepublishOnly": "yarn run lint && yarn run test",
+    "localpublish": "yalc publish && yalc push"
+  },
+  "devDependencies": {
+    "@aikon/aikon-configs": "^1.0.4",
+    "@types/jest": "^29.1.1",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  }
+}
